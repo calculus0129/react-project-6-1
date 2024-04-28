@@ -1,7 +1,7 @@
 import classes from './Counter.module.css';
 
 // When you decide to use functional component:
-/*
+// /*
 import { useSelector, useDispatch } from 'react-redux';
 
 const Counter = () => {
@@ -10,8 +10,8 @@ const Counter = () => {
 
   const toggleCounterHandler = () => {};
 
-  const incrementHandler = () => {
-    dispatch({type: 'increment'});
+  const incrementHandler = (amt) => {
+    dispatch({type: 'increment', amount: amt});
   };
   const decrementHandler = () => {
     dispatch({type: 'decrement'});
@@ -22,7 +22,8 @@ const Counter = () => {
       <h1>Redux Counter</h1>
       <div className={classes.value}>{counter}</div>
       <div>
-        <button onClick={incrementHandler}>increment</button>
+        <button onClick={() => incrementHandler()}>increment</button>
+        <button onClick={() => incrementHandler(10)}>increment by 10</button>
         <button onClick={decrementHandler}>decrement</button>
       </div>
       <button onClick={toggleCounterHandler}>Toggle Counter</button>
@@ -35,7 +36,7 @@ export default Counter;
 // */
 
 // When you decide to use class-based component:
-// /*
+/*
 
 import { connect } from 'react-redux';
 import { Component } from 'react';
