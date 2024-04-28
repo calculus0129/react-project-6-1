@@ -6,10 +6,10 @@ import {createStore} from 'redux';
 const reducer = (curState = {counter: 0}, action) => {
     let state = Object.create(curState); // deep-copy an object
     if(action.type === 'increment') {
-        state.counter -= 1;
+        state.counter += 1;
     }
     if(action.type === 'decrement') {
-        state.counter += 1;
+        state.counter -= 1;
     }
     return state;
 };
