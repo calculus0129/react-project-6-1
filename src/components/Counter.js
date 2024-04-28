@@ -30,7 +30,7 @@ const Counter = () => {
   );
 };
 
-export default Counter;
+export default Counter; 
 
 // */
 
@@ -43,8 +43,8 @@ import { Component } from 'react';
 class Counter extends Component {
   //constructor() => {} // Initialize state here if needed.
 
-  incrementHandler() {
-    this.props.increment();
+  incrementHandler(amt) {
+    this.props.increment(amt);
   }
   // decrementHandler() {}
   toggleCounterHandler() {}
@@ -54,7 +54,8 @@ class Counter extends Component {
         <h1>Redux Counter</h1>
         <div className={classes.value}>{this.props.propCounter}</div>
         <div>
-          <button onClick={this.incrementHandler.bind(this)}>increment</button>
+          <button onClick={() => this.incrementHandler.bind(this)()}>increment</button>
+          <button onClick={() => this.incrementHandler.bind(this)(10)}>increase by 10</button>
           <button onClick={this.props.decrement}>decrement</button>
         </div>
         <button onClick={this.toggleCounterHandler}>Toggle Counter</button>
@@ -71,7 +72,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    increment: () => dispatch({type: "increment"}),
+    increment: (amt) => dispatch({type: "increment", amount: amt}),
     decrement: () => dispatch({type: "decrement"}),
   };
 };
