@@ -1,5 +1,5 @@
 // Import redux from the Redux package
-import redux from 'redux';
+import {createStore} from 'redux';
 
 // const redux = require("redux");
 
@@ -14,6 +14,6 @@ const reducer = (curState = {counter: 0}, action) => {
     return state;
 };
 
-const store = redux.createStore(reducer);
+const store = createStore(reducer);
 
 export default store;
