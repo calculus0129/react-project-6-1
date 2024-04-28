@@ -1,23 +1,24 @@
 import classes from './Counter.module.css';
+import { actions } from '../store/index';
 
 // When you decide to use functional component:
-/*
+// /*
 import { useSelector, useDispatch } from 'react-redux';
 
 const Counter = () => {
   const dispatch = useDispatch();
-  const counter = useSelector(state=>state.counter);
-  const show = useSelector(state => state.showCounter);
-
-  const toggleCounterHandler = () => {
-    dispatch({type: 'toggle'});
-  };
+  const counter = useSelector(state=>state.counter.count);
+  const show = useSelector(state => state.show.showCounter);
 
   const incrementHandler = (amt) => {
-    dispatch({type: 'increment', amount: amt});
+    dispatch(actions.counterAct.increment(amt)); // {type: unique_identifier, payload: amt}
   };
   const decrementHandler = () => {
-    dispatch({type: 'decrement'});
+    dispatch(actions.counterAct.decrement());
+  };
+
+  const toggleCounterHandler = () => {
+    dispatch(actions.showCounterAct.toggleCount());
   };
 
   return (
@@ -39,7 +40,7 @@ export default Counter;
 // */
 
 // When you decide to use class-based component:
-// /*
+/*
 
 import { connect } from 'react-redux';
 import { Component } from 'react';
