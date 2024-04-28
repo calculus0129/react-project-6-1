@@ -1,7 +1,7 @@
 import classes from './Counter.module.css';
 
 // When you decide to use functional component:
-// /*
+/*
 import { useSelector, useDispatch } from 'react-redux';
 
 const Counter = () => {
@@ -39,7 +39,7 @@ export default Counter;
 // */
 
 // When you decide to use class-based component:
-/*
+// /*
 
 import { connect } from 'react-redux';
 import { Component } from 'react';
@@ -51,18 +51,20 @@ class Counter extends Component {
     this.props.increment(amt);
   }
   // decrementHandler() {}
-  toggleCounterHandler() {}
+  toggleCounterHandler() {
+    this.props.toggle();
+  }
   render() {
     return (
       <main className={classes.counter}>
         <h1>Redux Counter</h1>
-        <div className={classes.value}>{this.props.propCounter}</div>
+        {this.props.show && <div className={classes.value}>{this.props.propCounter}</div>}
         <div>
           <button onClick={() => this.incrementHandler.bind(this)()}>increment</button>
           <button onClick={() => this.incrementHandler.bind(this)(10)}>increase by 10</button>
           <button onClick={this.props.decrement}>decrement</button>
         </div>
-        <button onClick={this.toggleCounterHandler}>Toggle Counter</button>
+        <button onClick={this.toggleCounterHandler.bind(this)}>Toggle Counter</button>
       </main>
     );
   }
@@ -70,7 +72,8 @@ class Counter extends Component {
 
 const mapStateToProps = state => {
   return {
-    propCounter: state.counter
+    propCounter: state.counter,
+    show: state.showCounter,
   };
 };
 
@@ -78,6 +81,7 @@ const mapDispatchToProps = dispatch => {
   return {
     increment: (amt) => dispatch({type: "increment", amount: amt}),
     decrement: () => dispatch({type: "decrement"}),
+    toggle: () => dispatch({type: 'toggle'}),
   };
 };
 
