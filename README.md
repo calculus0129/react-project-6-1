@@ -1,10 +1,10 @@
 # react-project-6
 
-A Demonstration Application for using very fundamental redux.
+A Demonstration Application for using very very fundamental redux.
 
 ## How did I make this?
 
-bash```
+```bash
 code redux-demo.js # and save the .js file.
 npm init # with the redux-demo.js as the main application.
 npm install redux
@@ -18,7 +18,7 @@ Take a look at the `redux-demo.js`.
 
 Run this command:
 
-bash```
+```bash
 node redux-demo.js
 ```
 
