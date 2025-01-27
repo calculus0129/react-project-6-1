@@ -11,3 +11,6 @@ coverage
 *.env
 .env
 *.d.ts
+
+# Ignore markdown files
+*.md

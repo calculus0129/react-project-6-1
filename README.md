@@ -1,11 +1,25 @@
 # react-project-6
 
+A Demonstration Application for using very fundamental redux.
+
 ## How did I make this?
 
 bash```
-npm init
+code redux-demo.js # and save the .js file.
+npm init # with the redux-demo.js as the main application.
 npm install redux
+```
 
+## Learn from where?
+
+Take a look at the `redux-demo.js`.
+
+## Run
+
+Run this command:
+
+bash```
+node redux-demo.js
 ```
 
 <!-- ## Getting Started
@@ -101,4 +115,3 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * Hat tip to anyone whose code was used
 * Inspiration
 * etc -->
-```
