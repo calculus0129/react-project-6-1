@@ -26,3 +26,5 @@ const countReducer = (state: State = initialState, action: Action): State => {
 };
 
 const store = createStore(countReducer);
+
+export default store;
