@@ -6,13 +6,15 @@
   padding: 1rem;
   text-align: center;
   background-color: #f4f0fa;
-}
-
-.counter h1 {
-  text-transform: uppercase;
-  color: #575757;
-  margin: 0;
-  font-size: 1rem;
+  & h1 {
+    text-transform: uppercase;
+    color: #575757;
+    margin: 0;
+    font-size: 1rem;
+  }
+  & button {
+    margin: 1rem;
+  }
 }
 
 .value {
