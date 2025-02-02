@@ -11,7 +11,7 @@ A demo project for using redux in react.
 - `next-plain-redux`: A remade version of `wo-reduxToolkit` (made via next.js and typescript).
 - `next-ts-reduxtoolkit`: A remade version of `prev-reduxToolkit`.
 
-Currently, the `main` branch has the same content of the `next-ts-reduxtoolkit`.
+The `main` branch currently (on 25/02/02) has the same content with the `next-ts-reduxtoolkit` except for the documentation.
 
 ## Getting Started
 
