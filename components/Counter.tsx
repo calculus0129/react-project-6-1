@@ -2,14 +2,14 @@
 
 import { useSelector, useDispatch } from "react-redux";
 import classes from "./Counter.module.css";
-import type { State } from "@/store";
+import type { RootState } from "@/store";
 import { actions } from "@/store";
 
 import { useState } from "react";
 
 const Counter = () => {
   const [showCounter, setShowCounter] = useState(true);
-  const counter = useSelector((state: { count: State }) => state.count.count);
+  const counter = useSelector((state: RootState) => state.count.count);
 
   const dispatch = useDispatch();
   const counterHandler = (amount: number) => {
