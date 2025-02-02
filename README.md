@@ -1,8 +1,19 @@
 # react-project-6-1
 
-A demo project for using redux in react
+A demo project for using redux in react.
 
-<!-- ## Getting Started
+## Branch Descriptions
+
+- `demo`: A demonstration code of using redux in a javascript application.
+- `wo-reduxToolkit`: A react application (of create-react-app) with plain `react-redux`'s state management.
+- `prev-reduxToolkit`: The extended react application whose state is managed by `@reduxjs/toolkit` library.
+- `remake`: A remade version of `demo`.
+- `next-plain-redux`: A remade version of `wo-reduxToolkit` (made via next.js and typescript).
+- `next-ts-reduxtoolkit`: A remade version of `prev-reduxToolkit`.
+
+Currently, the `main` branch has the same content of the `next-ts-reduxtoolkit`.
+
+## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
@@ -10,29 +21,34 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them
 
-```
+* [node.js](https://nodejs.org/)
+* [git](https://git-scm.com) (or you can just download the programs manually from the repository website)
+
+<!-- ```
 Give examples
-```
+``` -->
 
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running
 
-Say what the step will be
+#### 1. Download Program Files
 
-```
-Give the example
-```
+#### 2. Run the following code (once)
 
-And repeat
-
-```
-until finished
+```bash
+npm install
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+#### 3. Run the development env
 
-## Running the tests
+```bash
+npm run dev
+```
+
+<!-- End with an example of getting some data out of the system or using it for a little demo -->
+
+<!-- ## Running the tests
 
 Explain how to run the automated tests for this system
 
@@ -50,33 +66,33 @@ Explain what these tests test and why
 
 ```
 Give an example
-```
+``` -->
 
-## Deployment
+<!-- ## Deployment
 
-Add additional notes about how to deploy this on a live system
+Add additional notes about how to deploy this on a live system -->
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+<!-- * [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used -->
+* [node.js](https://nodejs.org/) - Dependency Management
+<!-- * [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds -->
 
-## Contributing
+<!-- ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us. -->
 
-## Versioning
+<!-- ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).  -->
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Jaehyun Bhang** - *Initial work* - [calculus0129](https://github.com/calculus0129)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/calculus0129/react-project-6-1/contributors) who participated in this project.
 
-## License
+<!-- ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details -->
 
